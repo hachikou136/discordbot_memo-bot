@@ -15,4 +15,5 @@ I edited some of the original sourcecode and made it a Discord bot that runs on 
 6. [uptimerobot](https://uptimerobot.com/)
 7. [discord.pyを使ったDiscord Botで「'Client' object has no attribute 'send_message'」エラーが発生する - てっくのーと](https://tech.mizuka123.net/entry/2018/09/30/090645)
 8. [【Discord.py】Discord.py 1.5で追加されたIntentsを攻略する - Qiita](https://qiita.com/manuo/items/7f62dc2f1e0a801a0708)
-9. 
+9. [discord.pyを使ってBotを作っていたらエラーを吐かれた](https://teratail.com/questions/3qvdlwofzo3aww)
+10. https://discord.com/developers/applications/
