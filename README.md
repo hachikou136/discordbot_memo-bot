@@ -14,3 +14,9 @@ https://discordpy.readthedocs.io/ja/latest/api.html#discord.Client.change_presen
 
 [How to Execute Shell Commands With Python?](https://www.the-analytics.club/python-shell-commands)
 
+[uptimerobot](https://uptimerobot.com/)
+
+[discord.pyを使ったDiscord Botで「'Client' object has no attribute 'send_message'」エラーが発生する - てっくのーと](https://tech.mizuka123.net/entry/2018/09/30/090645)
+
+[【Discord.py】Discord.py 1.5で追加されたIntentsを攻略する - Qiita](https://qiita.com/manuo/items/7f62dc2f1e0a801a0708)
+
