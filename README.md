@@ -22,3 +22,4 @@ Check the bot status at [here](https://stats.uptimerobot.com/ODYmKHNjr6)🔭
 8. [【Discord.py】Discord.py 1.5で追加されたIntentsを攻略する - Qiita](https://qiita.com/manuo/items/7f62dc2f1e0a801a0708)
 9. [discord.pyを使ってBotを作っていたらエラーを吐かれた](https://teratail.com/questions/3qvdlwofzo3aww)
 10. https://discord.com/developers/applications/
+11. [Introducing "Public Status Pages" - Yay! | UptimeRobot Blog](https://blog.uptimerobot.com/introducing-public-status-pages-yay/)
