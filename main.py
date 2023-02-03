@@ -2,6 +2,8 @@ import sqlite3
 import discord
 import os
 import subprocess
+from keep_alive import keep_alive
+import random
 
 Intents = discord.Intents.default()
 Intents.message_content = True
@@ -24,10 +26,26 @@ async def on_server_join(server):
 
 
 @client.event
+# async def on_message(message):
+#   # print('printf0')
+#   if not message.content.startswith('!'): return
+#   if not message.content.startswith('!m'): return
+#   if message.content.startswith('!mlist'):
+#     # print('printf1')
+#     return await memo_list(message)
+#   if message.content.startswith('!madd '):
+#     return await memo_add(message)
+#   if message.content.startswith('!mrm '):
+#     return await memo_rm(message)
+#   if message.content.startswith('!m '):
+#     return await memo_show(message)
+#   if message.content.startswith('!m?') or message.content.startswith('!memo'):
+#     return await memo_man(message)
 async def on_message(message):
   # print('printf0')
-  if not message.content.startswith('!'): return
-  if not message.content.startswith('!m'): return
+  # print(message.content)
+  # if not message.content.startswith('!'): return
+  # if not message.content.startswith('!m'): return
   if message.content.startswith('!mlist'):
     # print('printf1')
     return await memo_list(message)
@@ -37,6 +55,14 @@ async def on_message(message):
     return await memo_rm(message)
   if message.content.startswith('!m '):
     return await memo_show(message)
+  if message.content.startswith('はき！ '):
+    const_message = 'はき！ パワー！'
+    if not message.content.startswith(const_message):
+      return await memo_show(message)
+    one_or_two = random.randint(1, 2)
+    if one_or_two == 1:
+      return await text_show(message, 'ヤー！！')
+    return await text_show(message, '💪')
   if message.content.startswith('!m?') or message.content.startswith('!memo'):
     return await memo_man(message)
 
@@ -135,5 +161,11 @@ async def memo_show(message):
       message.author.name, memo_message[1]))
   return await message.channel.send(memo[3])
 
+
+async def text_show(message, text):
+  return await message.channel.send(text)
+
+
+keep_alive()
 
 client.run(os.environ['TOKEN'])
